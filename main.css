@@ -29,3 +29,10 @@ body {
 /* h1 {
     font-family: sans-serif;
 } */
+
+.main-header {
+    width: 100%;
+    background: #2ddf5c;
+    padding: 8px 16px;
+    
+}
