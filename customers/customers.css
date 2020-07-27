@@ -1,10 +1,11 @@
+  
+  main {
+    padding-top: 2.5rem;
+  }
+  
   .testimonial {
       font-size: 1.2rem;
     }
-
-  .testimonial:first-of-type {
-    margin-top: 96px;
-  }
 
   .testimonial__image-container {
     width: 100%;
