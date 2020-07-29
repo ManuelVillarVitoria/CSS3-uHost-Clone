@@ -8,9 +8,11 @@ const mobileNav = document.querySelector('.mobile-nav')
 
 for (let item of selectPlanButtons) {
     item.addEventListener('click', () => {
-        //modal.className = 'open';//This will actually overwrite the complete class list
         modal.classList.add('open');
-        backdrop.classList.add('open');
+        backdrop.style.display = 'block';
+        setTimeout(() => {
+            backdrop.classList.add('open');
+        }, 10);
     });
 }
 
@@ -28,11 +30,17 @@ function closeModal() {
         modal.classList.remove('open');
     }
     backdrop.classList.remove('open');
+    setTimeout(() => {
+        backdrop.style.display = 'none';
+    }, 200);
 }
 
 toggleButton.addEventListener('click', () => {
     mobileNav.classList.add('open');
-    backdrop.classList.add('open');
+    backdrop.style.display = 'block';
+    setTimeout(() => {
+        backdrop.classList.add('open');
+    }, 10);
 });
 
 
